@@ -1,0 +1,41 @@
+.contents-wrap .main-contents-wrapper #main-contents {
+  padding: 0em;
+}
+
+.login-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-container .login-form {
+  background-color: #fff;
+  min-height: 30vh;
+  width: 100%;
+  max-width: 600px;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-container .login-form form {
+  max-width: 600px;
+  width: 100%;
+}
+
+.login-container .login-form form .title {
+  text-align: center;
+  font-weight: bold;
+  font-size: 5rem;
+  margin-bottom: 25px;
+  color: #007bfe;
+}
+
+.login-container .login-form .error-message {
+  background-color: #fbf1f2;
+  color: #dc3545;
+  padding: 1em;
+  border: 1px solid;
+  margin: 1em 0;
+}

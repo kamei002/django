@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block title %}Signup{% endblock %}
+{% block content %}
+
+<div class="login-container">
+    <div class="login-form">
+        <form method="post" action="">
+            {% csrf_token %}
+
+            <div class="logowrap">
+                <div class="title">Sign up</div>
+            </div>
+            <div class="field-wrap">
+                <div class="field-contents">{{ form.email }}</div>
+                <div class="valid-error">{{ form.errors.email }}</div>
+            </div>
+            <div class="field-wrap">
+                <div class="field-contents">{{ form.password }}</div>
+                <div class="valid-error">{{ form.errors.password }}</div>
+            </div>
+            <div class="flex-center field-wrap">
+                <input type="submit" class="btn btn-primary" value="登録">
+            </div>
+            <div class="flex-center">
+                <a href="/account/login/">ログインはこちら</a>
+            </div>
+        </form>
+    </div>
+</div>
+{% endblock %}

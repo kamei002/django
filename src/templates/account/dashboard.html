@@ -1,0 +1,69 @@
+{% extends "base.html" %}
+{% block content %}
+
+{% load static_cb %}
+
+{% block head %}
+{% endblock %}
+
+{% block bottom %}
+{% endblock %}
+
+<h2>Today's study: <span>{{number_of_today_study}}</span> words</h2>
+<div class="contents-area">
+    <div class="card-wrap">
+        <div class="card">
+            <a href="/word/learn">
+                <div class="title">
+                    Learn
+                </div>
+                <div class="contents">
+                    <div class="sambnail">
+                        <img src="{% static 'images/learn.jpg' %}">
+
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="card">
+            <a href="/word/category">
+                <div class="title">
+                    Category
+                </div>
+                <div class="contents">
+                    <div class="sambnail">
+                        <img src="{% static 'images/category.jpg' %}">
+
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="card">
+            <a href="/word/learn?visible_checked=1">
+                <div class="title">
+                    Learn from checked
+                </div>
+                <div class="contents">
+                    <div class="sambnail">
+                        <img src="{% static 'images/star.png' %}">
+
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="card">
+            <a href="/word/setting">
+                <div class="title">
+                    Setting
+                </div>
+                <div class="contents">
+                    <div class="sambnail">
+                        <img src="{% static 'images/setting.png' %}">
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
